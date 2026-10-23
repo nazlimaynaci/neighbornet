@@ -1,0 +1,26 @@
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+.env
+.env.*
+
+# Flutter / Dart
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+
+# Node
+node_modules/
+dist/
+
+# Java
+target/
+.gradle/
+
+# Python
+__pycache__/
+.venv/
