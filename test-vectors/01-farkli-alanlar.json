@@ -1,0 +1,24 @@
+{
+  "name": "Farklı alanlar farklı telefonlarda değişti, ikisi de korunur",
+  "local": {
+    "id": "r1",
+    "fields": {
+      "description": { "value": "Tansiyon ilacı lazım", "hlc": "1000:0:telA" },
+      "status":      { "value": "open",                 "hlc": "900:0:telA" }
+    }
+  },
+  "remote": {
+    "id": "r1",
+    "fields": {
+      "description": { "value": "İlaç lazım", "hlc": "900:0:telB" },
+      "status":      { "value": "matched",    "hlc": "1100:0:telB" }
+    }
+  },
+  "merged": {
+    "id": "r1",
+    "fields": {
+      "description": { "value": "Tansiyon ilacı lazım", "hlc": "1000:0:telA" },
+      "status":      { "value": "matched",              "hlc": "1100:0:telB" }
+    }
+  }
+}
